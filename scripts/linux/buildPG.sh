@@ -9,4 +9,8 @@ cd openFrameworks
 sudo ./scripts/linux/ubuntu/install_dependencies.sh -y;
 
 scripts/linux/download_libs.sh
-scripts/linux/compilePG.sh
+
+export LC_ALL=C
+
+OF_ROOT=./
+make Release -C ${OF_ROOT}/apps/projectGenerator/commandLine
