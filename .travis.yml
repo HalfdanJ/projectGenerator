@@ -1,5 +1,3 @@
-language: c++
-compiler: gcc
 env:
   global:
     secure: LBTN8d1hS7ocrqDwxLQqU0tfK3FMCXBI8q1yASEjtkp/v5HEyFkbj22H4jXZ20SkpCTlIG2L6i/fU3d6KzJUzTFuxkQEWsnjkj4jAhxGEWRsT1RV6VcUPQDGLHapXwTy+ZYgMNxE7aAdQaBskPHdVzAhjrzlTwVuKp6KjFn+kMU=
@@ -13,7 +11,7 @@ matrix:
 
     - os: linux
       dist: trusty
-      env: NAME="osx" SCRIPT_PATH="scripts/$NAME" SCRIPT="$SCRIPT_PATH/buildPG.sh"
+      env: NAME="linux" SCRIPT_PATH="scripts/$NAME" SCRIPT="$SCRIPT_PATH/buildPG.sh"
 
 script: "$SCRIPT"
 git:
